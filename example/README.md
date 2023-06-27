@@ -1,62 +1,16 @@
-# flutter_reaction_button_example
+# example
 
-ReactionButtonToggle:
+A new Flutter project.
 
-```dart
-ReactionButtonToggle<String>(
-    onReactionChanged: (String? value, bool isChecked) {
-        print('Selected value: $value, isChecked: $isChecked');
-    },
-    reactions: <Reaction<String>>[
-        Reaction<String>(
-            value: 'like',
-            previewIcon: widget,
-            icon: widget,
-        ),
-        Reaction<String>(
-            value: 'love',
-            previewIcon: widget,
-            icon: widget,
-        ),
-        ...
-    ],
-    initialReaction: Reaction<String>(
-        value: 'like',
-        icon: widget,
-    ),
-    selectedReaction: Reaction<String>(
-        value: 'like_fill',
-        icon: widget,
-    ),
-)
-```
+## Getting Started
 
+This project is a starting point for a Flutter application.
 
-ReactionButton:
+A few resources to get you started if this is your first Flutter project:
 
-```dart
-ReactionButton<String(
-    onReactionChanged: (String? value) {
-        print('Selected value: $value');
-    },
-    reactions: <Reaction<String>>[
-        Reaction<String>(
-            value: 'en',
-            previewIcon: widget,
-            icon: widget,
-        ),
-        Reaction<String>(
-            value: 'ar',
-            previewIcon: widget,
-            icon: widget,
-        ),
-        ...
-    ],
-    initialReaction: Reaction<String>(
-        value: null,
-        icon: Icon(
-            Icons.language,
-        ),
-    ),
-)
-```
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
